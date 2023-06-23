@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>SmokeSense</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="{{ url_for('static', filename='/img/LOGO.png') }}" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="/static/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="/static/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="/static/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="/static/styles/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="/static/styles/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light d-none d-lg-block">
+        <div class="row align-items-center top-bar">
+            <div class="col-lg-3 col-md-12 text-center text-lg-start">
+                <a href="/" class="navbar-brand m-0 p-0">
+                    <h1 class="text-primary m-0"><img class="logo img-fluid" src="/static/img/LOGO.png" alt="">SmokeSense</h1>
+                </a>
+            </div>
+            <div class="col-lg-9 col-md-12 text-end">
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <i class="fa fa-map-marker-alt text-primary me-2"></i>
+                    <p class="m-0">123 Street, Chennai, ,Tamil Nadu, India</p>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <i class="far fa-envelope-open text-primary me-2"></i>
+                    <p class="m-0">smokesense@gmail.com</p>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-0" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid nav-bar bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white p-3 py-lg-0 px-lg-4">
+            <a href="/" class="navbar-brand d-flex align-items-center m-0 p-0 d-lg-none">
+                <h1 class="text-primary m-0"><img class="logo img-fluid" src="/static/img/LOGO.png" alt="">SmokeSense</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav me-auto">
+                    <a href="/" class="nav-item nav-link active">Home</a>
+                    <a href="/about" class="nav-item nav-link">About</a>
+                    <a href="/service" class="nav-item nav-link">Services</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                        <div class="dropdown-menu fade-up m-0">
+                            <a href="/predict" class="dropdown-item">Predict</a>
+                            <a href="/team" class="dropdown-item">Technicians</a>
+                            <a href="/testimonial" class="dropdown-item">Testimonial</a>
+                            <a href="/404" class="dropdown-item">404 Page</a>
+                        </div>
+                    </div>
+                    <a href="/contact" class="nav-item nav-link">Contact</a>
+                </div>
+                <div class="mt-4 mt-lg-0 me-lg-n4 py-3 px-4 bg-primary d-flex align-items-center">
+                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 45px; height: 45px;">
+                        <i class="fa fa-phone-alt text-primary"></i>
+                    </div>
+                    <div class="ms-3">
+                        <p class="mb-1 text-white">Emergency 24/7</p>
+                        <h5 class="m-0 text-secondary">+012 345 6789</h5>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header mb-5 py-5">
+        <div class="container">
+            <h1 class="display-3 text-white mb-3 animated slideInDown">Services</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb text-uppercase">
+                    <li class="breadcrumb-item"><a class="text-white" href="/">Home</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                    <li class="breadcrumb-item text-white active" aria-current="page">Services</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    <!-- Service Start -->
+    <div class="container-fluid py-5 px-4 px-lg-0">
+        <div class="row g-0">
+            <div class="col-lg-3 d-none d-lg-flex">
+                <div class="d-flex align-items-center justify-content-center bg-primary w-100 h-100">
+                    <h1 class="display-3 text-white m-0" style="transform: rotate(-90deg);">5 different ML models</h1>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-9">
+                <div class="ms-lg-5 ps-lg-5">
+                    <div class="text-center text-lg-start wow fadeInUp" data-wow-delay="0.1s">
+                        <h6 class="text-secondary text-uppercase">Our Pre-trained Models</h6>
+                        <h1 class="mb-5">Explore Our Models</h1>
+                    </div>
+                    <div class="owl-carousel service-carousel position-relative wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="bg-light p-4">
+                            <h4 class="mb-3">Logistic Regression</h4>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Precision: 0.99</p>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Recall: 0.97</p>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>F1 - Score: 0.98</p>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Accuracy: 0.97</p>
+                            <a id="predict" href="/predict" class="btn bg-white text-primary w-100 mt-2">Use<i class="fa fa-arrow-right text-secondary ms-2"></i></a>
+                        </div>
+                        <div class="bg-light p-4">
+                            <h4 class="mb-3">Naive Bayes</h4>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Precision: 0.78</p>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Recall: 0.98</p>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>F1 - Score: 0.87</p>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Accuracy: 0.79</p>
+                            <a href="/predict" class="btn bg-white text-primary w-100 mt-2">Use<i class="fa fa-arrow-right text-secondary ms-2"></i></a>
+                        </div>
+                        <div class="bg-light p-4">
+                            <h4 class="mb-3">Random Forest</h4>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Precision: 1.00</p>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Recall: 1.00</p>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>F1 - Score: 1.00</p>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Accuracy: 1.00</p>
+                            <a href="/predict" class="btn bg-white text-primary w-100 mt-2">Use<i class="fa fa-arrow-right text-secondary ms-2"></i></a>
+                        </div>
+                        <div class="bg-light p-4">
+                            <h4 class="mb-3">SVM - Linear Kernel</h4>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Precision: 0.99</p>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Recall: 0.99</p>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>F1 - Score: 0.99</p>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Accuracy: 0.99</p>
+                            <a href="/predict" class="btn bg-white text-primary w-100 mt-2">Use<i class="fa fa-arrow-right text-secondary ms-2"></i></a>
+                        </div>
+                        <div class="bg-light p-4">
+                            <h4 class="mb-3">SVM - Non-linear Kernel</h4>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Precision: 0.99</p>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Recall: 0.98</p>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>F1 - Score: 0.99</p>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Accuracy: 0.97</p>
+                            <a href="/predict" class="btn bg-white text-primary w-100 mt-2">Use<i class="fa fa-arrow-right text-secondary ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Booking Start -->
+    <div style="margin-top: 30px;" class="container-fluid my-5 px-0">
+        <div class="container position-relative wow fadeInUp" data-wow-delay="0.1s" style="margin-top: -6rem;">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="bg-light text-center p-5" style="margin-top: 30px;">
+                        <h1 class="mb-4">Quick predict with our best model</h1>
+                        <form action="/predict" method="post">
+                            <div class="row g-3">
+                                <div class="col-12 col-sm-6">
+                                    <input type="number" step="any" class="form-control border-0" placeholder="Temperature[C]" name="Temperature[C]" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="number" step="any" class="form-control border-0" placeholder="Humidity[%]" name="Humidity[%]" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="number" step="any" class="form-control border-0" placeholder="TVOC[ppb]" name="TVOC[ppb]" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="number" step="any" class="form-control border-0" placeholder="eCO2[ppm]" name="eCO2[ppm]" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="number" step="any" class="form-control border-0" placeholder="Raw H2" name="Raw H2" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="number" step="any" class="form-control border-0" placeholder="Raw Ethanol" name="Raw Ethanol" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="number" step="any" class="form-control border-0" placeholder="Pressure[hPa]" name="Pressure[hPa]" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="number" step="any" class="form-control border-0" placeholder="PM1.0" name="PM1.0" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="number" step="any" class="form-control border-0" placeholder="PM2.5" name="PM2.5" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="number" step="any" class="form-control border-0" placeholder="NC0.5" name="NC0.5" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="number" step="any" class="form-control border-0" placeholder="NC1.0" name="NC1.0" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="number" step="any" class="form-control border-0" placeholder="NC2.5" name="NC2.5" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="number" step="any" class="form-control border-0" placeholder="CNT" name="CNT" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <select class="form-select border-0" style="height: 55px;" name="model">
+                                        <option selected>Select A Model</option>
+                                        <option value="LOGR">Logistic Regression</option>
+                                        <option value="RF">Random forest</option>
+                                        <option value="NB">Naive Bayes</option>
+                                        <option value="SVMLK">SVM - Linear</option>
+                                        <option value="SVMNLK">SVM - Non linear</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Predict</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Booking End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="text-center">
+                <h6 class="text-secondary text-uppercase">Testimonial</h6>
+                <h1 class="mb-5">Our Clients Say!</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel position-relative wow fadeInUp" data-wow-delay="0.1s">
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-text bg-light text-center p-4 mb-4">
+                        <p class="mb-0">"The SMOKE detection system from this website has been a game-changer for our business. Its accurate smoke detection capabilities combined with real-time alerts have significantly improved our fire safety measures. The user-friendly interface and excellent customer support make it a complete package."</p>
+                    </div>
+                    <img class="bg-light rounded-circle p-2 mx-auto mb-2" src="/static/img/testimonial-1.jpg" style="width: 80px; height: 80px;">
+                    <div class="mb-2">
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                    </div>
+                    <h5 class="mb-1">John D</h5>
+                    <p class="m-0">Building Contractor</p>
+                </div>
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-text bg-light text-center p-4 mb-4">
+                        <p class="mb-0">"I am truly impressed with the IoT and ML-powered smoke detection system offered by this website. It's incredibly efficient in detecting smoke and provides instant notifications, ensuring quick response to potential fire hazards. The system's reliability and the exceptional customer service have exceeded my expectations."</p>
+                    </div>
+                    <img class="bg-light rounded-circle p-2 mx-auto mb-2" src="/static/img/testimonial-2.jpg" style="width: 80px; height: 80px;">
+                    <div class="mb-2">
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                    </div>
+                    <h5 class="mb-1">Bruce M</h5>
+                    <p class="m-0">Hotel Manager</p>
+                </div>
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-text bg-light text-center p-4 mb-4">
+                        <p class="mb-0">"Thanks to this website's SMOKE detection system, our home feels much safer now. The advanced sensors and intelligent algorithms quickly detect even the slightest traces of smoke, giving us peace of mind. The system's ease of use and the prompt support from the team make it a standout choice."</p>
+                    </div>
+                    <img class="bg-light rounded-circle p-2 mx-auto mb-2" src="/static/img/testimonial-3.jpg" style="width: 80px; height: 80px;">
+                    <div class="mb-2">
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                    </div>
+                    <h5 class="mb-1">Robert T</h5>
+                    <p class="m-0">Homeowner</p>
+                </div>
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-text bg-light text-center p-4 mb-4">
+                        <p class="mb-0">"As a business owner, I highly recommend this website's SMOKE detection system. Its seamless integration of IoT and ML technology provides a robust and proactive approach to fire safety. The real-time monitoring feature and reliable alerts have been invaluable in keeping our premises protected."</p>
+                    </div>
+                    <img class="bg-light rounded-circle p-2 mx-auto mb-2" src="/static/img/testimonial-4.jpg" style="width: 80px; height: 80px;">
+                    <div class="mb-2">
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                    </div>
+                    <h5 class="mb-1">Emily R</h5>
+                    <p class="m-0">Small Business Owner</p>
+                </div>
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-text bg-light text-center p-4 mb-4">
+                        <p class="mb-0">"I couldn't be happier with the decision to install the SMOKE detection system from this website. It has been a lifesaver, quite literally. The system's accuracy in detecting smoke, combined with its intuitive interface and exceptional customer support, has made it an indispensable asset in our home."</p>
+                    </div>
+                    <img class="bg-light rounded-circle p-2 mx-auto mb-2" src="/static/img/testimonial-4.jpg" style="width: 80px; height: 80px;">
+                    <div class="mb-2">
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                    </div>
+                    <h5 class="mb-1">Michael S</h5>
+                    <p class="m-0">Firefighter</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+        
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Address</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, Chennai, ,Tamil Nadu, India</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>smokesense@gmail.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Service availability</h4>
+                    <h6 class="text-light">Monday - Sunday:</h6>
+                    <p class="mb-4">24/7</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Services</h4>
+                    <a class="btn btn-link" href="/404">Prediction </a>
+                    <a class="btn btn-link" href="/404">Real time data visualization <div class="under-construction">Available soon!</div></a>
+                    <a class="btn btn-link" href="/404">Historical data analysis <div class="under-construction">Available soon!</div></a>
+                    <a class="btn btn-link" href="/404">Instant Alerts and Notifications <div class="under-construction">Available soon!</div></a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Newsletter</h4>
+                    <p>Know every one of our new updates</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">Smokesense</a>, All Right Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/lib/wow/wow.min.js"></script>
+    <script src="/static/lib/easing/easing.min.js"></script>
+    <script src="/static/lib/waypoints/waypoints.min.js"></script>
+    <script src="/static/lib/counterup/counterup.min.js"></script>
+    <script src="/static/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="/static/lib/tempusdominus/js/moment.min.js"></script>
+    <script src="/static/lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="/static/js/main.js"></script>
+</body>
+
+</html>
