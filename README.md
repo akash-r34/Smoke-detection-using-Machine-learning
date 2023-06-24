@@ -11,29 +11,21 @@ Welcome to the SmokeSense website repository! This website serves as a platform 
 
 ## Installation
 1. Clone the repository:
-git clone https://github.com/akash-r34/Smoke-detection-using-Machine-learning
-
-markdown
-Copy code
+`git clone https://github.com/akash-r34/Smoke-detection-using-Machine-learning`
 
 2. Install the required dependencies:
-cd Smoke-detection-using-Machine-learning
-npm install
-
-markdown
-Copy code
+`cd Smoke-detection-using-Machine-learning
+npm install`
 
 3. Configure the necessary settings:
 - Update the database credentials and API keys in the configuration file.
 - Customize the website appearance and settings as needed.
 
 4. Start the development server:
-npm start
+`npm start`
 
-less
-Copy code
 
-5. Access the website:
+6. Access the website:
 Open your web browser and visit http://localhost:3000 to access the SmokeSense website.
 
 ## Technologies Used
