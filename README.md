@@ -1,68 +1,51 @@
-\documentclass{article}
-\usepackage{hyperref}
+# SmokeSense: Smoke Detection Website
 
-\title{SmokeSense: Smoke Detection Website}
-\author{Akash R}
-\date{24/06/2023}
-
-\begin{document}
-\maketitle
-
-\section*{Welcome}
 Welcome to the SmokeSense website repository! This website serves as a platform for smoke detection using IoT data and machine learning techniques. It provides real-time monitoring, analysis, and alerts to help detect and prevent smoke incidents promptly.
 
-\section*{Features}
-\begin{itemize}
-  \item Real-time data visualization (still in development): Visualize live sensor data, including temperature, smoke levels, and other relevant parameters, through intuitive charts and graphs.
-  \item Instant alerts and notifications (still in development): Receive immediate alerts via email, SMS, or push notifications when a smoke event is detected, enabling swift response and containment.
-  \item Historical data analysis: Dive into historical data, uncover trends, and gain valuable insights to inform smoke prevention strategies.
-  \item User management (still in development): Create an account to personalize your experience, manage notification preferences, and customize data visualization options.
-  \item Support and contact: Access comprehensive support resources, FAQs, and get in touch with our team for assistance.
-\end{itemize}
+## Features
+- Real-time data visualization (still in development): Visualize live sensor data, including temperature, smoke levels, and other relevant parameters, through intuitive charts and graphs.
+- Instant alerts and notifications (still in development): Receive immediate alerts via email, SMS, or push notifications when a smoke event is detected, enabling swift response and containment.
+- Historical data analysis: Dive into historical data, uncover trends, and gain valuable insights to inform smoke prevention strategies.
+- User management (still in development): Create an account to personalize your experience, manage notification preferences, and customize data visualization options.
+- Support and contact: Access comprehensive support resources, FAQs, and get in touch with our team for assistance.
 
-\section*{Installation}
-\begin{enumerate}
-  \item Clone the repository:
-  \begin{verbatim}
-  git clone https://github.com/akash-r34/Smoke-detection-using-Machine-learning
-  \end{verbatim}
+## Installation
+1. Clone the repository:
+git clone https://github.com/akash-r34/Smoke-detection-using-Machine-learning
 
-  \item Install the required dependencies:
-  \begin{verbatim}
-  cd Smoke-detection-using-Machine-learning
-  npm install
-  \end{verbatim}
+markdown
+Copy code
 
-  \item Configure the necessary settings:
-  \begin{itemize}
-    \item Update the database credentials and API keys in the configuration file.
-    \item Customize the website appearance and settings as needed.
-  \end{itemize}
+2. Install the required dependencies:
+cd Smoke-detection-using-Machine-learning
+npm install
 
-  \item Start the development server:
-  \begin{verbatim}
-  npm start
-  \end{verbatim}
+markdown
+Copy code
 
-  \item Access the website:
-  Open your web browser and visit \url{http://localhost:3000} to access the SmokeSense website.
-\end{enumerate}
+3. Configure the necessary settings:
+- Update the database credentials and API keys in the configuration file.
+- Customize the website appearance and settings as needed.
 
-\section*{Technologies Used}
-\begin{itemize}
-  \item Front-end: HTML, CSS, JavaScript, Flask
-  \item Back-end: Node.js, Express.js
-  \item Database: MongoDB
-  \item Machine Learning: Python, scikit-learn, TensorFlow
-\end{itemize}
+4. Start the development server:
+npm start
 
-\section*{Contributing}
+less
+Copy code
+
+5. Access the website:
+Open your web browser and visit http://localhost:3000 to access the SmokeSense website.
+
+## Technologies Used
+- Front-end: HTML, CSS, JavaScript, Flask
+- Back-end: Node.js, Express.js
+- Database: MongoDB
+- Machine Learning: Python, scikit-learn, TensorFlow
+
+## Contributing
 We welcome contributions from the open source community to enhance the SmokeSense website. If you find any issues or have suggestions for improvements, please open a new issue or submit a pull request.
 
-\section*{Contact}
-For any inquiries or support, please email us at \href{mailto:akash34srinivasan@gmail.com.com}{support@smokesense.com}.
+## Contact
+For any inquiries or support, please email us at [akash34srinivasan@gmail.com](mailto:akash34srinivasan@gmail.com).
 
 We appreciate your interest in SmokeSense and thank you for visiting our website!
-
-\end{document}
-
