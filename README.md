@@ -2,6 +2,17 @@
 
 Welcome to the SmokeSense website repository! This website serves as a platform for smoke detection using IoT data and machine learning techniques. It provides real-time monitoring, analysis, and alerts to help detect and prevent smoke incidents promptly.
 
+This is a project done under the guidance of <b>SmartInternz</b> for the course Applied data science
+
+<h3>Team no: 450</h3>
+<b>Team members</b>
+<ul>
+<li><b>AKASH R 20BCE1501</b> Github: <a href="https://github.com/akash-r34">akash-r34</a></li>
+<li><b>SUDARSUN	S 20BCE1699</b> Github: <a href="sudarsun.s2020@vitstudent.ac.in">Sudarsun-S</a></li>
+<li><b>MATHAV	KRISHNAN S 20BCE1139</b> Github: <a href="mathavkrishnan.s2020@vitstudent.ac.in">Mathav-Krishnan-S</a></li>
+<li><b>SAMEER	AHSAN 20MIS1191</b> Github: <a href="sameer.ahsan2020@vitstudent.ac.in">Sameer-Ahsan</a></li>
+</ul>
+
 ## Features
 - Real-time data visualization (still in development): Visualize live sensor data, including temperature, smoke levels, and other relevant parameters, through intuitive charts and graphs.
 - Instant alerts and notifications (still in development): Receive immediate alerts via email, SMS, or push notifications when a smoke event is detected, enabling swift response and containment.
