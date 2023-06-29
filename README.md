@@ -8,9 +8,9 @@ This is a project done under the guidance of <b>SmartInternz</b> for the course 
 <b>Team members</b>
 <ul>
 <li><b>AKASH R 20BCE1501</b> Github: <a href="https://github.com/akash-r34">akash-r34</a></li>
-<li><b>SUDARSUN	S 20BCE1699</b> Github: <a href="sudarsun.s2020@vitstudent.ac.in">Sudarsun-S</a></li>
-<li><b>MATHAV	KRISHNAN S 20BCE1139</b> Github: <a href="mathavkrishnan.s2020@vitstudent.ac.in">Mathav-Krishnan-S</a></li>
-<li><b>SAMEER	AHSAN 20MIS1191</b> Github: <a href="sameer.ahsan2020@vitstudent.ac.in">Sameer-Ahsan</a></li>
+<li><b>SUDARSUN	S 20BCE1699</b> Github: <a href="https://github.com/SudarsunTech">Sudarsun-S</a></li>
+<li><b>MATHAV	KRISHNAN S 20BCE1139</b> Github: <a href="https://github.com/mathavkrishnan">Mathav-Krishnan-S</a></li>
+<li><b>SAMEER	AHSAN 20MIS1191</b> Github: <a href="https://github.com/SameerAhsan38">Sameer-Ahsan</a></li>
 </ul>
 
 ## Features
