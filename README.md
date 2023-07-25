@@ -41,8 +41,6 @@ Open your web browser and visit http://localhost:3000 to access the SmokeSense w
 
 ## Technologies Used
 - Front-end: HTML, CSS, JavaScript, Flask
-- Back-end: Node.js, Express.js
-- Database: MongoDB
 - Machine Learning: Python, scikit-learn, TensorFlow
 
 ## Contributing
